@@ -7,6 +7,7 @@
     <title>Buôn Bán Đồ Nội Thất</title>
     <link rel = "icon" href = "image/title.jpg" type = "">          
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +21,13 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-thin fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -346,7 +352,7 @@
         </div>
 
         <div class="col">
-            <h4>Tài khoản</h4>
+            <h4>Accout</h4>
             <a href="#">Đăng nhập </a>
             <a href="#">Xem giỏ hàng</a>
             <a href="#">Sản phẩm yêu thích</a>
@@ -367,5 +373,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/8cd89348d9.js" crossorigin="anonymous"></script>
 </body>
 </html>
