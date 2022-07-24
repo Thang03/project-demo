@@ -60,7 +60,7 @@ body {
     width: 100%;
 }
 
-/*Header*/
+/* Header */
 
 #header {
     display: flex;
@@ -119,7 +119,7 @@ body {
     display: none;
 }
 
-/*Home Page*/
+/* Home Page */
 
 #caption {
     background-image: url("../image/background.jpg");
@@ -369,7 +369,7 @@ footer .copyright {
     text-align: center;
 }
 
-/*Shop Page*/
+/* Shop Page */
 
 #page-header {
     background-image: url(../image/background2.jpg);
@@ -409,7 +409,7 @@ footer .copyright {
     font-weight: 600;
 }
 
-/*Singel product*/
+/* Singel product */
 
 #prodetails{
     display: flex;
@@ -461,6 +461,102 @@ footer .copyright {
     line-height: 25px;
 }
 
+/* Blog Page */
+
+#page-header.blog-header{
+    background-image: url("../image/banner/b19.jpg");
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #088178;
+} 
+
+#blog .blog-details a:hover::after {
+    background-color: #088178;
+}
+
+/* About Page */
+
+#page-header.about-header {
+    background-image: url(../image/about/banner.png);
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-video {
+    text-align: center;
+}
+
+#about-video .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-video .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+ 
 @media (max-width:799px) {
 
     .section-p1 {
@@ -580,5 +676,41 @@ footer .copyright {
 
     footer .copyright {
         text-align: start;
+    }
+/* Singel Product */
+    
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .singel-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+/* Blog Page */
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
     }
 }
